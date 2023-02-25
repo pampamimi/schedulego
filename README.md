@@ -1,4 +1,4 @@
-![alt text](https://github.com/Varnilla/schedulego/blob/main/assets/banner.png?raw=true)
+![This was supposed to be a logo](https://github.com/Varnilla/schedulego/blob/main/assets/banner.png?raw=true)
 
 # ScheduLEGO!
 
@@ -17,4 +17,6 @@ Welcome to ScheduLEGO repository! A Whatsapp NodeJS bot for a P5 School project!
 - Sheika Zafira **( 32 )**
 
 ## Programs Used
-Visual Studio Code - NodeJS - Paint.NET 
+[Visual Studio Code](https://code.visualstudio.com/) - [NodeJS](https://nodejs.org/en/) - [Paint.NET](https://www.getpaint.net/)
+
+This repository is under [MIT License](https://github.com/Varnilla/schedulego/blob/main/LICENSE)
