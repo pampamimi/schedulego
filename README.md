@@ -19,4 +19,4 @@ Welcome to ScheduLEGO repository! A Whatsapp NodeJS bot for a P5 School project!
 ## Programs Used 🛠
 [Visual Studio Code](https://code.visualstudio.com/) - [NodeJS](https://nodejs.org/en/) - [Paint.NET](https://www.getpaint.net/)
 
-This repository is under [MIT License](https://github.com/Varnilla/schedulego/blob/main/LICENSE)
+> This repository is under [MIT License](https://github.com/Varnilla/schedulego/blob/main/LICENSE)
