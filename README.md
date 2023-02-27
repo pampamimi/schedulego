@@ -26,9 +26,9 @@ What do you mean? oh? personal use? surely yes! you can do whatever the hell you
 
 - First you must install [NodeJS](https://nodejs.org/en/)
 
-- Download this repo as a `.zip` file.. *or if you want to, just use [git](https://git-scm.com/downloads).*
+- Download this repo as a `.zip` file... *or if you want to, just use [git](https://git-scm.com/downloads).*
 
-- Unzip the file, run a Terminal then type `cd <thisBotFolder>` then type `npm i` wait a till its done downloading, and then type `node .` when the qr code pops up, scan the qr code using Whatsapp from your phone, and voila!
+- Unzip the file, run a Terminal then type `cd <thisBotFolder>` then type `npm i` wait until its done downloading, and then type `node .` when the qr code pops up, scan the qr code using Whatsapp from your phone, and voila!
 
 ## Programs Used 🛠
 [Visual Studio Code](https://code.visualstudio.com/) and [NodeJS](https://nodejs.org/en/)
