@@ -1,4 +1,3 @@
 const client = require("../index")
-const qrcode = require('qrcode-terminal')
 
-client.on("qr", qr => { qrcode.generate(qr, {small: true} ) })
+client.on("qr", qr => { require('qrcode-terminal').generate(qr, {small: true} ) })
