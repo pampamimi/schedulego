@@ -9,3 +9,5 @@ client.config = require("./config.json")
 require("./handler")(client)
 
 client.initialize();
+
+console.log("Please wait a moment until it's logged on :)")
