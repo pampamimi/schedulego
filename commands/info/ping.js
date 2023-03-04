@@ -4,5 +4,3 @@ module.exports = {
         client.sendMessage(message.from, 'pong');
     },
 }
-
-//client.ws.ping
