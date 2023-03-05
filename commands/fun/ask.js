@@ -1,12 +1,12 @@
 const response =
-["iyh banh", "y", "Setuju", "mungkin?", "iyah",
-"coba tanya lagi", "gak bisa jawab untuk skrg", "hmm apa y", "gmw jwb", "terserah ajh",
-"g", "gmw", "jgn", "jangan", "tentu tidak"]
+["Mimo setuju!", "Kayaknya iya?", "Iyaa", "Mungkin?", "Yapp",
+"Coba tanya Mimo lagi next time", "Mimo gak bisa jawab buat sekarang...", "Menurut Mimo... Gatau deh.", "Mimo gak mau jawab", "Terserah kamu ajaa, Mimo bingung",
+"NGGAK!", "Mimo gak setuju", "Mimo gak tauu :(", "Tentunya enggak", "Mimo kurang setuju..."]
 
 module.exports = {
     name: "ask",
     run: async (client, message, args) => {
-        if (!args[0]) return message.reply("Tanya sebuah pertanyaan yang jawabannya positif atau negatif")
+        if (!args[0]) return message.reply("Tanya Mimo pertanyaan yang jawabannya bisa positif atau negatif!")
         message.reply(response[Math.floor(Math.random() * response.length)])
     },
 }
