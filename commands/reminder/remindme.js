@@ -11,10 +11,16 @@ module.exports = {
 
         //db.set(`remind.${message.author.id}`,Date.now() + ms(timeuser))
 
-        writeFile("./reminders.json", JSON.stringify("ass"), "utf8", x => { if (x) throw x })
+        readFile("./reminders.json", "utf8", (err, data) => {
+            if (err) throw err
+            data = JSON.parse(data)
+            data[Date.now().toString(36) + Math.random().toString(36).slice(2)] = { "reason": reason, "time": timeuser, "from": message.from }
+            //JSON.parse(data)
+
+            writeFile("./reminders.json", JSON.stringify(data, null, 2), "utf8", x => { if (x) throw x })
+        })
 
         message.reply(`Mimo bakalan ingetin kamu mengenai ${reason} setelah ${timeuser}`)
-
 
     },
 }
