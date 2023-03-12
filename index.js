@@ -11,3 +11,12 @@ require("./handler")(client)
 client.initialize();
 
 console.log("Please wait a moment until it's logged on :)")
+
+try {
+    require("../reminders.json")[0]
+} catch {
+    require("fs").writeFileSync("reminders.json", "{}")
+    return console.log("Created \"reminders.json\" because it doesn't exist")
+}
+
+console.log("The file \"reminders.json\" already existed")

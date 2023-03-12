@@ -1,19 +1,16 @@
 const client = require("../index")
 
 client.on("message", async (message) => {
-
-  // a super necessary code i added because im cool becaues im the dev i can do anything
-  if (message.body.toLowerCase() == "goof gunk") return client.sendMessage(message.from, 'goof gunk');
-
-    if (!message.body.toLowerCase().startsWith(client.config.prefix)) return
-
-    const [cmd, ...args] = message.body.slice(client.config.prefix.length).trim().split(/ +/g)
-
-    const command = client.commands.get(cmd.toLowerCase())
-
-    if (!command) return
-
-    await command.run(client, message, args)
+  
+  if (!message.body.toLowerCase().startsWith(client.config.prefix)) return
+  
+  const [cmd, ...args] = message.body.slice(client.config.prefix.length).trim().split(/ +/g)
+  
+  const command = client.commands.get(cmd.toLowerCase())
+  
+  if (!command) return
+  
+  await command.run(client, message, args)
     
 })
 

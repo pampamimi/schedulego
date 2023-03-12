@@ -1,3 +1,3 @@
 const client = require("../index")
 
-client.on('ready', () => { console.log("ScheduLEGO has logged in!") })
+client.on('ready', () => { console.log("Mimo has logged in!") })
