@@ -4,10 +4,10 @@ const { writeFile, readFile } = require("fs");
 let reminder
 
 module.exports = () => readFile("./reminders.json", "utf8", (err, data) => {
-
-    if (err || !data) throw "Make sure you have reminders.json file that contains an empty object!"
+    
+    if (err) throw "Make sure you have reminders.json file that contains an empty object!"
   
-    reminder = JSON.parse(data)
+    if (data) reminder = JSON.parse(data)
   
 })
 
