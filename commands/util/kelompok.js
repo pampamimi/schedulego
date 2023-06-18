@@ -10,11 +10,11 @@ module.exports = {
     name: "kelompok",
     run: async (client, message, args) => {
         
-        if(!args[0] || isNaN(args[0])) return message.reply("Murid akan dibagi menjadi berapa kelompok?")
+        if(!args[0] || isNaN(args[0])) return message.reply("[❓] Murid akan dibagi menjadi berapa kelompok?")
 
         const jml_kel = parseInt(args[0])
 
-        if (jml_kel > jml_murid) return message.reply("Kelompok tidak bisa lebih dari " + jml_murid)
+        if (jml_kel > jml_murid) return message.reply("[⚠] Kelompok tidak bisa lebih dari " + jml_murid)
 
         let kel = []
         let k = 0
@@ -37,7 +37,7 @@ module.exports = {
             })
         })
 
-        client.sendMessage(message.from, "Mimo udah ngacak kelompoknya, dan ini hasilnya!\n" + z.join("\n"));
+        client.sendMessage(message.from, "[✏] Mimo udah ngacak kelompoknya, dan ini hasilnya!\n" + z.join("\n"));
 
         _murid.forEach(x => { murid.push(x) })
 

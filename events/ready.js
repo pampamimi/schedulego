@@ -4,7 +4,7 @@ const { writeFile, readFile } = require("fs");
 let reminder
 
 module.exports = () => readFile("./reminders.json", "utf8", (err, data) => {
-    
+
     if (err) throw "Make sure you have reminders.json file that contains an empty object!"
   
     if (data) reminder = JSON.parse(data)
@@ -23,7 +23,7 @@ client.on('ready', () => {
     
             if(Date.now() > x.time){
                 
-                client.sendMessage(x.from, `Reminder! sebelumnya kamu meminta mimo untuk mengingatkanmu tentang\n\n*${x.reason}*`)
+                client.sendMessage(x.from, `[🔔] Reminder! sebelumnya kamu meminta mimo untuk mengingatkanmu tentang *${x.reason}*`)
 
                 reminder.splice(i, 1)
                 

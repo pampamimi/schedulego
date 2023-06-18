@@ -16,17 +16,17 @@ module.exports = {
 
             else {
 
-                if (!dayIndex.includes(_day)) return message.reply(`Mimo gatau ${_day} itu hari apa 😢`)
+                if (!dayIndex.includes(_day)) return message.reply(`[❓] Mimo gatau hari ${_day} itu hari apa..`)
 
                 day = dayIndex.indexOf(_day) - 1
 
             }
 
-        }      
+        }
 
-        if (day < 0 || day > 5) return message.reply(`HARI ${args[0] ? "MINGGU" : "INI"} LIBURRRR!! 🥳🥳🎉`)
+        if (day < 0 || day > 5) return message.reply(`[🥳] HARI ${args[0] ? "MINGGU" : "INI"} LIBURRRR!!`)
 
-        message.reply(`Mimo liat di jadwal, hari ${args[0] ? dayIndex[day + 1] : "ini"} mapelnya..\n• ${jadwal[day].join("\n• ")}`)
+        message.reply(`[🗒] Mimo liat di jadwal, hari ${args[0] ? dayIndex[day + 1] : "ini"} mapelnya:\n\n• ${jadwal[day].join("\n• ")}`)
 
     },
 }
